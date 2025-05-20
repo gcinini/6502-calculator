@@ -17,10 +17,7 @@
 - Handles basic input and output via standard routines (may need adaptation for your platform)
 - Note
     This example handles basic 8-bit unsigned integer math. No overflow checks, no floating-point, no backspace or input correction.
-    If you're serious about Apple II development, I'd recommend:
-        Learning about Apple II DOS/ProDOS hooks
-        Getting comfortable with the Monitor
-        Studying the ROM routines in the Apple II Reference Manual
+    If you're serious about Apple II development, I'd recommend learning about Apple II DOS/ProDOS hooks, getting comfortable with the Monitor, and tudying the ROM routines in the Apple II Reference Manual
 
 ## How to Compile
 
