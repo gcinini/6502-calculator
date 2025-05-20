@@ -1,0 +1,39 @@
+# calculator.asm
+
+## Overview
+
+`calculator.asm` is an assembly language program for the 6502 microprocessor. It implements a simple calculator that can perform basic arithmetic operations such as addition, subtraction, multiplication, and division. The program is intended as an educational example for learning 6502 assembly programming.
+
+## Platform
+
+- **Target CPU:** MOS Technology 6502
+- **Intended Environment:** Any 6502-based system or emulator (e.g., Commodore 64, Apple II, Atari 8-bit, or VICE emulator)
+- **Assembler Compatibility:** Written for standard 6502 assemblers (e.g., [ca65](https://cc65.github.io/doc/ca65.html), [vasm](http://sun.hasenbraten.de/vasm/), [XA](https://www.floodgap.com/retrotech/xa/))
+
+## Features
+
+- Accepts two integer operands and an operator (+, -, *, /)
+- Displays the result of the calculation
+- Handles basic input and output via standard routines (may need adaptation for your platform)
+
+## How to Compile
+
+1. **Choose an assembler** compatible with 6502 assembly (e.g., ca65, vasm, XA).
+2. **Assemble the source:**
+    - For ca65:
+      ```
+      ca65 calculator.asm -o calculator.o
+      ld65 calculator.o -o calculator.bin -C your_config.cfg
+      ```
+    - For vasm:
+      ```
+      vasm6502_oldstyle -Fbin -o calculator.bin calculator.asm
+      ```
+3. **Load the binary** into your 6502 emulator or hardware.
+4. **Run the program** and follow on-screen prompts.
+
+> **Tip:** You may need to adjust input/output routines for your specific hardware or emulator.
+
+## License
+
+This project is released under the MIT License.
