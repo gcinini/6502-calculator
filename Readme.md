@@ -2,7 +2,7 @@
 
 ## Overview
 
-`calculator.asm` is an assembly language program for the 6502 microprocessor. It implements a simple calculator that can perform basic arithmetic operations such as addition, subtraction, multiplication, and division. The program is intended as an educational example for learning 6502 assembly programming.
+`calculator.asm` is an assembly language program for the 6502 microprocessor. It implements a simple calculator that can perform basic arithmetic operations such as addition, subtraction, multiplication, and division. The program is intended as an educational example for learning 6502 assembly programming. It was created by a prompt in ChatGPT on May/2025. The promt was: "write some example 6502 assembly code that inputs two numbers from a user, than calculates the sum, subtraction, multiplication, division, percentage difference, and prints it all out. Target the Apple II platform"
 
 ## Platform
 
@@ -15,6 +15,12 @@
 - Accepts two integer operands and an operator (+, -, *, /)
 - Displays the result of the calculation
 - Handles basic input and output via standard routines (may need adaptation for your platform)
+- Note
+    This example handles basic 8-bit unsigned integer math. No overflow checks, no floating-point, no backspace or input correction.
+    If you're serious about Apple II development, I'd recommend:
+        Learning about Apple II DOS/ProDOS hooks
+        Getting comfortable with the Monitor
+        Studying the ROM routines in the Apple II Reference Manual
 
 ## How to Compile
 
